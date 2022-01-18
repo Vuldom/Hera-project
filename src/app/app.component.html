@@ -1,1 +1,11 @@
+<h1>{{title}}</h1>
+<input type="text" [(ngModel)]="title">
+<p></p>
 <app-post></app-post>
+<button (click) = "back = !back">Back</button>
+<p [ngClass] ="{
+    red: back,
+    blue: !back
+}">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsa.            
+</p>

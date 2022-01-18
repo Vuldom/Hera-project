@@ -2,5 +2,19 @@
 <h2>
     Post Title
 </h2>
+<h2>{{title}}</h2>
+<img [src]="img">
+<input type="text" input="onInput($event)" #myInput>
+<button (click)="onClick(myInput.value)">Click me!</button>
+<p><strong>{{inputValue}}</strong></p>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas eius quasi nobis quisquam ducimus ipsa nisi hic quia maxime repellat.</p>
+<button (click) = "backgroundToggle = !backgroundToggle">Toggle</button>
+<div [ngStyle]="{
+    width:'200px',
+    height:'200px',
+    border: '1px solid green',
+    background: backgroundToggle ? 'red' : 'yellow'
+}">
+
+</div>
 </div>
